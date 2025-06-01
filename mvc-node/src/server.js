@@ -21,7 +21,7 @@ app.use(cors(corsOptions));  // enable all CORS requests
 
 // add controller to /users route
 app.get('/users', userController.getAll);
-app.get('/users/create', userController.create);
+app.post('/users/create', userController.create);
 
 // run server
 app.listen(PORT, () => console.log("server started on PORT: " + PORT))
